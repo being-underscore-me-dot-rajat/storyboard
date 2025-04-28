@@ -126,12 +126,6 @@ exit()
 
 ---
 
-## 📄 License
-
-This project is open-sourced under the [MIT License](LICENSE).
-
----
-
 ## 👨‍💻 Authors
 
 - [Rajat Upadhyay](https://github.com/being-underscore-me-dot-rajat)

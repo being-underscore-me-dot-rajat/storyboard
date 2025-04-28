@@ -134,4 +134,4 @@ This project is open-sourced under the [MIT License](LICENSE).
 
 ## 👨‍💻 Authors
 
-- [Your Name Here](https://github.com/your-username)
+- [Rajat Upadhyay](https://github.com/being-underscore-me-dot-rajat)

@@ -1,0 +1,17 @@
+html, body {
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+html,body{
+  background-image: url("src/assets/images/wmremove-transformed.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll; 
+  min-height: 100vh; 
+}
+

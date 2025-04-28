@@ -1,0 +1,121 @@
+:root {
+    --primary: #9a6de863;
+    --secondary: #4f46e5;
+    --accent: #ff6b6b;
+    --dark: #1a1a1a;
+    --gradient-1: linear-gradient(45deg, #7c3aed, #4f46e5, #ff6b6b);
+    --gradient-2: linear-gradient(45deg, #4f46e5, #7c3aed, #ff6b6b);
+  }
+
+  .container {
+    background: var(--gradient-1);
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 3rem 3rem 1rem 2rem;
+    margin-top: 2rem;
+    /* margin-bottom: 2rem; */
+    /* max-width: 900px;
+    min-height: 500px; */
+    color: #f0f0f0;
+    /* position: relative; */
+  }
+.carousel-inner {
+    /* border-radius: 1.5rem; */
+    /* overflow: hidden; */
+    min-height: 500px; /* Ensures consistent container height */
+  }
+  
+  /* Image handling for varying dimensions */
+  .carousel-item {
+    position: relative;
+    height: 65vh; /* Responsive height based on viewport */
+    max-height: 700px;
+    min-height: 400px;
+  }
+  
+  .carousel-item img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  
+  
+  /* Dynamic indicator count
+  .carousel-indicators {
+    position: absolute;
+    bottom: -50px; /* Move indicators below carousel
+    margin: 0;
+    justify-content: center;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+
+    margin: 0 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-indicators .active {
+    background: var(--accent);
+    border-color: white;
+    transform: scale(1.3);
+  }
+  
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 8%;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.15);
+  } */
+  
+  /* Responsive adjustments */
+  /* @media (max-width: 992px) {
+    .carousel-item {
+      height: 55vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item {
+      height: 45vh;
+      min-height: 300px;
+    }
+    
+    .carousel-indicators [data-bs-target] {
+      width: 10px;
+      height: 10px;
+    }
+  } */
+  
+  /* Equalize image display */
+  .carousel-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      45deg, 
+      rgba(28, 28, 28, 0.4) 0%, 
+      rgba(28, 28, 28, 0.1) 100%
+    );
+  }
+  
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    letter-spacing: 1px;
+}

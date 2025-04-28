@@ -1,0 +1,160 @@
+/* Add to App.css */
+:root {
+  --primary: #9a6de863;
+  --secondary: #4f46e5;
+  --accent: #ff6b6b;
+  --dark: #1a1a1a;
+  --gradient-1: linear-gradient(45deg, #7c3aed, #4f46e5, #ff6b6b);
+  --gradient-2: linear-gradient(45deg, #4f46e5, #7c3aed, #ff6b6b);
+}
+
+@keyframes chromatic-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-success {
+  position: relative;
+  overflow: hidden;
+  background-size: 400% 400%;
+  background-image: var(--gradient-1);
+  transition: 0.4s;
+}
+
+.btn-success:hover {
+  animation: chromatic-flow 2s ease infinite, pulse 2s ease infinite;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.5);
+}
+
+
+.btn:active {
+  transform: scale(0.96);
+  filter: brightness(1.2);
+}
+
+.form-select {
+  transition: all 0.3s ease;
+  background-blend-mode: overlay;
+}
+
+.form-select:hover {
+  background-image: var(--gradient-2);
+  background-size: 200% 200%;
+  animation: chromatic-flow 4s linear infinite;
+}
+
+
+
+/* .mb-3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;  /* Corrected font-weight value 
+  letter-spacing: 0.5px;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;  /* Corrected font-weight value 
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+} */
+
+
+
+.mb-4{
+  font-size: 1rem;
+  font-weight: 700;
+  /* text-align: center; */
+  margin-top: 1rem;
+  color: #f0f0f0;
+  text-shadow: 0 4px 4px rgb(0, 0, 0,0.7);
+}
+
+
+select.form-select option {
+  background-color: #1a1a1a;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+}
+
+
+.form-control {
+  position: relative;
+  overflow: hidden;
+  background-size: 400% 400%;
+  background-image: var(--gradient-1);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  font-size: 7rem;
+  animation: chromatic-flow 5s ease infinite;
+}
+
+.form-control:focus {
+  animation: chromatic-flow 5s ease infinite;
+  box-shadow: 0 15px 20px rgba(124, 58, 237, 0.3);
+}
+
+.form-control::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.form-control:hover {
+  transform: scale(1.02);
+}
+
+.form-control::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background-image: var(--gradient-2);
+  background-size: 400% 400%;
+}
+
+
+.btn-outline-danger {
+  color: #fff;
+  background-color: #ff4d4d;
+  border: none;
+  box-shadow: 0 0 10px #ff4d4d;
+  transition: 0.3s;
+}
+
+.btn-outline-danger:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 15px #ff6b6b;
+}
+
+
+textarea,
+.form-control {
+  color: #ffffff; 
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  /* background: var(--gradient-1); */
+  /* ...other styles as needed */
+}
+
+
+textarea::placeholder {           /* Standard */
+  color: #ffe066;
+  opacity: 1;                     /* Make sure it's fully opaque */
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+textarea::-webkit-input-placeholder { /* Chrome/Safari/Opera */
+  color: #ffe066;
+  opacity: 1;
+}

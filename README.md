@@ -68,6 +68,8 @@ npm install
 
 # Run the application
 npm start
+npm run dev
+python src/app.py
 ```
 
 The app will be available at `http://localhost:3000`.
